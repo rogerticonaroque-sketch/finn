@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Tema educativo de Codificación y Ejecución de un Programa para 5to de Secundaria - Sistemas Informáticos">
+
+    <meta name="author" content="Sistemas Informáticos - 5to de Secundaria">
+
+    <title>Codificación y Ejecución de un Programa | 5to Secundaria</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     ENCABEZADO
+===================================================== -->
+
+<header class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="badge">5.º DE SECUNDARIA</span>
+
+        <h1>
+            Codificación y Ejecución
+            <span>de un Programa</span>
+        </h1>
+
+        <p class="hero-description">
+            Sistemas Informáticos · Programación · Pensamiento lógico
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#introduccion" class="btn btn-primary">
+                Comenzar tema
+            </a>
+
+            <a href="#evaluacion" class="btn btn-outline">
+                Ir a evaluación
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     NAVEGACIÓN
+===================================================== -->
+
+<nav class="navbar">
+
+    <div class="nav-container">
+
+        <div class="logo">
+            <span class="logo-symbol">&lt;/&gt;</span>
+            <span>Sistemas<span class="logo-highlight">Informáticos</span></span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#introduccion">Inicio</a>
+            <a href="#codigo">Código</a>
+            <a href="#datos">Datos</a>
+            <a href="#operadores">Operadores</a>
+            <a href="#seleccion">Selección</a>
+            <a href="#repeticion">Repetición</a>
+            <a href="#control">Control</a>
+            <a href="#actividad">Actividad</a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =====================================================
+     CONTENEDOR PRINCIPAL
+===================================================== -->
+
+<main class="container">
+
+
+<!-- =====================================================
+     INTRODUCCIÓN
+===================================================== -->
+
+<section id="introduccion" class="section">
+
+    <div class="section-heading">
+
+        <span class="section-number">01</span>
+
+        <div>
+            <span class="section-label">FUNDAMENTOS</span>
+
+            <h2>
+                Introducción a la codificación
+            </h2>
+        </div>
+
+    </div>
+
+    <div class="intro-grid">
+
+        <article class="content-card">
+
+            <div class="card-icon">💻</div>
+
+            <h3>¿Qué es la codificación?</h3>
+
+            <p>
+                La <strong>codificación</strong> es el proceso de transformar
+                un algoritmo o solución lógica en instrucciones escritas
+                mediante un lenguaje de programación.
+            </p>
+
+            <p>
+                Estas instrucciones permiten que una computadora pueda
+                procesar datos, realizar operaciones, tomar decisiones
+                y producir resultados.
+            </p>
+
+        </article>
+
+
+        <article class="content-card">
+
+            <div class="card-icon">⚙️</div>
+
+            <h3>Proceso de desarrollo</h3>
+
+            <div class="process-flow">
+
+                <span>Problema</span>
+                <i>→</i>
+
+                <span>Análisis</span>
+                <i>→</i>
+
+                <span>Algoritmo</span>
+                <i>→</i>
+
+                <span>Codificación</span>
+                <i>→</i>
+
+                <span>Compilación</span>
+                <i>→</i>
+
+                <span>Ejecución</span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CÓDIGO FUENTE
+===================================================== -->
+
+<section id="codigo" class="section dark-section">
+
+    <div class="section-heading light">
+
+        <span class="section-number">02</span>
+
+        <div>
+            <span class="section-label">CÓDIGO FUENTE</span>
+
+            <h2>Almacenamiento y recuperación</h2>
+        </div>
+
+    </div>
+
+
+    <div class="two-column">
+
+        <div>
+
+            <h3>¿Qué es el código fuente?</h3>
+
+            <p>
+                El <strong>código fuente</strong> es el conjunto de
+                instrucciones escritas por el programador utilizando
+                un lenguaje de programación.
+            </p>
+
+            <p>
+                El código debe almacenarse en un archivo para poder
+                recuperarlo, modificarlo, compartirlo y ejecutarlo
+                posteriormente.
+            </p>
+
+            <h3 class="subheading">Extensiones comunes</h3>
+
+            <ul class="check-list">
+
+                <li><strong>.c</strong> → Lenguaje C</li>
+                <li><strong>.cpp</strong> → C++</li>
+                <li><strong>.java</strong> → Java</li>
+                <li><strong>.py</strong> → Python</li>
+                <li><strong>.js</strong> → JavaScript</li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="code-window">
+
+            <div class="code-header">
+
+                <span>
+                    ● ● ●
+                </span>
+
+                <span>programa.c</span>
+
+            </div>
+
+<pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+
+    printf("Hola, mundo");
+
+    return 0;
+}</code></pre>
+
+        </div>
+
+    </div>
+
+
+    <div class="folder-structure">
+
+        <h3>Organización de un proyecto</h3>
+
+<pre>
+MiProyecto/
+│
+├── programa.c
+├── datos.txt
+├── README.txt
+│
+└── documentos/
+    └── manual.pdf
+</pre>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     COMPILACIÓN
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <span class="section-number">03</span>
+
+        <div>
+            <span class="section-label">PROCESAMIENTO</span>
+
+            <h2>Compilación y ejecución</h2>
+        </div>
+
+    </div>
+
+
+    <div class="pipeline">
+
+        <div class="pipeline-item">
+
+            <div class="pipeline-icon">01</div>
+
+            <h3>Código fuente</h3>
+
+            <p>
+                Instrucciones escritas por el programador.
+            </p>
+
+        </div>
+
+        <div class="pipeline-arrow">→</div>
+
+        <div class="pipeline-item">
+
+            <div class="pipeline-icon">02</div>
+
+            <h3>Compilador</h3>
+
+            <p>
+                Traduce y analiza el código.
+            </p>
+
+        </div>
+
+        <div class="pipeline-arrow">→</div>
+
+        <div class="pipeline-item">
+
+            <div class="pipeline-icon">03</div>
+
+            <h3>Programa</h3>
+
+            <p>
+                Se genera el código ejecutable.
+            </p>
+
+        </div>
+
+        <div class="pipeline-arrow">→</div>
+
+        <div class="pipeline-item">
+
+            <div class="pipeline-icon">04</div>
+
+            <h3>Ejecución</h3>
+
+            <p>
+                El programa produce resultados.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="comparison">
+
+        <div class="comparison-box">
+
+            <h3>Compilación</h3>
+
+            <ul>
+                <li>Traduce el código.</li>
+                <li>Analiza errores.</li>
+                <li>Genera código ejecutable.</li>
+                <li>Se realiza antes de ejecutar.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="comparison-box accent">
+
+            <h3>Ejecución</h3>
+
+            <ul>
+                <li>Inicia el programa.</li>
+                <li>Procesa las instrucciones.</li>
+                <li>Utiliza los datos de entrada.</li>
+                <li>Genera resultados.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TIPOS DE DATOS
+===================================================== -->
+
+<section id="datos" class="section gray-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">04</span>
+
+        <div>
+            <span class="section-label">DATOS</span>
+
+            <h2>Tipos de datos, variables y constantes</h2>
+        </div>
+
+    </div>
+
+
+    <h3 class="topic-title">Tipos de datos</h3>
+
+
+    <div class="data-grid">
+
+        <div class="data-card">
+
+            <code>int</code>
+
+            <h3>Enteros</h3>
+
+            <p>Números sin parte decimal.</p>
+
+            <span>Ejemplo: 25</span>
+
+        </div>
+
+
+        <div class="data-card">
+
+            <code>float</code>
+
+            <h3>Decimales</h3>
+
+            <p>Números con parte decimal.</p>
+
+            <span>Ejemplo: 3.14</span>
+
+        </div>
+
+
+        <div class="data-card">
+
+            <code>double</code>
+
+            <h3>Alta precisión</h3>
+
+            <p>Decimales con mayor precisión.</p>
+
+            <span>Ejemplo: 25.6789</span>
+
+        </div>
+
+
+        <div class="data-card">
+
+            <code>char</code>
+
+            <h3>Carácter</h3>
+
+            <p>Almacena un carácter.</p>
+
+            <span>Ejemplo: 'A'</span>
+
+        </div>
+
+
+        <div class="data-card">
+
+            <code>bool</code>
+
+            <h3>Booleano</h3>
+
+            <p>Representa verdadero o falso.</p>
+
+            <span>true / false</span>
+
+        </div>
+
+
+        <div class="data-card">
+
+            <code>void</code>
+
+            <h3>Sin valor</h3>
+
+            <p>Indica ausencia de valor.</p>
+
+            <span>void</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="two-column variable-section">
+
+        <div>
+
+            <h3>Variables</h3>
+
+            <p>
+                Una variable es un espacio de memoria destinado a
+                almacenar información cuyo valor puede cambiar durante
+                la ejecución.
+            </p>
+
+<pre class="mini-code"><code>int edad = 17;
+
+edad = 18;</code></pre>
+
+        </div>
+
+
+        <div>
+
+            <h3>Constantes</h3>
+
+            <p>
+                Una constante almacena un valor que no debe modificarse
+                durante la ejecución del programa.
+            </p>
+
+<pre class="mini-code"><code>const int DIAS = 7;
+
+const float PI = 3.14159;</code></pre>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OPERADORES
+===================================================== -->
+
+<section id="operadores" class="section">
+
+    <div class="section-heading">
+
+        <span class="section-number">05</span>
+
+        <div>
+            <span class="section-label">EXPRESIONES</span>
+
+            <h2>Operadores</h2>
+        </div>
+
+    </div>
+
+
+    <div class="operator-grid">
+
+        <article class="operator-card">
+
+            <h3>➕ Aritméticos</h3>
+
+            <div class="operator-list">
+
+                <span>+</span>
+                <span>-</span>
+                <span>*</span>
+                <span>/</span>
+                <span>%</span>
+
+            </div>
+
+            <p>
+                Permiten realizar operaciones matemáticas.
+            </p>
+
+        </article>
+
+
+        <article class="operator-card">
+
+            <h3>⚖️ Relacionales</h3>
+
+            <div class="operator-list">
+
+                <span>&gt;</span>
+                <span>&lt;</span>
+                <span>&gt;=</span>
+                <span>&lt;=</span>
+                <span>==</span>
+                <span>!=</span>
+
+            </div>
+
+            <p>
+                Permiten comparar valores.
+            </p>
+
+        </article>
+
+
+        <article class="operator-card">
+
+            <h3>🧠 Lógicos</h3>
+
+            <div class="operator-list">
+
+                <span>&amp;&amp;</span>
+                <span>||</span>
+                <span>!</span>
+
+            </div>
+
+            <p>
+                Permiten combinar condiciones.
+            </p>
+
+        </article>
+
+
+        <article class="operator-card">
+
+            <h3>📝 Asignación</h3>
+
+            <div class="operator-list">
+
+                <span>=</span>
+                <span>+=</span>
+                <span>-=</span>
+                <span>*=</span>
+                <span>/=</span>
+
+            </div>
+
+            <p>
+                Permiten asignar o modificar valores.
+            </p>
+
+        </article>
+
+    </div>
+
+
+    <div class="example-box">
+
+        <h3>Ejemplo de operadores</h3>
+
+<pre><code>int a = 10;
+int b = 3;
+
+int suma = a + b;
+int resta = a - b;
+int producto = a * b;
+int division = a / b;
+int resto = a % b;</code></pre>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SELECCIÓN
+===================================================== -->
+
+<section id="seleccion" class="section dark-section">
+
+    <div class="section-heading light">
+
+        <span class="section-number">06</span>
+
+        <div>
+            <span class="section-label">DECISIONES</span>
+
+            <h2>Estructuras de selección</h2>
+        </div>
+
+    </div>
+
+
+    <div class="selection-grid">
+
+        <article class="selection-card">
+
+            <div class="structure-tag">IF</div>
+
+            <h3>Estructura if</h3>
+
+            <p>
+                Ejecuta un bloque de instrucciones solamente cuando
+                una condición es verdadera.
+            </p>
+
+<pre><code>if (edad >= 18) {
+
+    printf("Mayor de edad");
+
+}</code></pre>
+
+        </article>
+
+
+        <article class="selection-card">
+
+            <div class="structure-tag">IF / ELSE</div>
+
+            <h3>Estructura if-else</h3>
+
+            <p>
+                Permite seleccionar entre dos caminos posibles.
+            </p>
+
+<pre><code>if (nota >= 51) {
+
+    printf("Aprobado");
+
+} else {
+
+    printf("Reprobado");
+
+}</code></pre>
+
+        </article>
+
+
+        <article class="selection-card">
+
+            <div class="structure-tag">SWITCH</div>
+
+            <h3>Selección múltiple</h3>
+
+            <p>
+                Permite seleccionar una alternativa entre varias
+                opciones.
+            </p>
+
+<pre><code>switch(opcion) {
+
+    case 1:
+        printf("Suma");
+        break;
+
+    case 2:
+        printf("Resta");
+        break;
+
+    default:
+        printf("Inválido");
+}</code></pre>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     REPETICIÓN
+===================================================== -->
+
+<section id="repeticion" class="section">
+
+    <div class="section-heading">
+
+        <span class="section-number">07</span>
+
+        <div>
+            <span class="section-label">CICLOS</span>
+
+            <h2>Estructuras de repetición</h2>
+        </div>
+
+    </div>
+
+
+    <div class="loop-grid">
+
+
+        <!-- FOR -->
+
+        <article class="loop-card">
+
+            <div class="loop-number">01</div>
+
+            <h3>for</h3>
+
+            <p>
+                Se utiliza principalmente cuando conocemos
+                el número de repeticiones.
+            </p>
+
+<pre><code>for (int i = 1; i <= 5; i++) {
+
+    printf("%d\n", i);
+
+}</code></pre>
+
+            <div class="result">
+                Resultado: 1 · 2 · 3 · 4 · 5
+            </div>
+
+        </article>
+
+
+        <!-- WHILE -->
+
+        <article class="loop-card">
+
+            <div class="loop-number">02</div>
+
+            <h3>while</h3>
+
+            <p>
+                Repite mientras una condición sea verdadera.
+            </p>
+
+<pre><code>int i = 1;
+
+while (i <= 5) {
+
+    printf("%d\n", i);
+    i++;
+
+}</code></pre>
+
+            <div class="result">
+                La condición se evalúa primero.
+            </div>
+
+        </article>
+
+
+        <!-- DO WHILE -->
+
+        <article class="loop-card">
+
+            <div class="loop-number">03</div>
+
+            <h3>do / while</h3>
+
+            <p>
+                Ejecuta el bloque al menos una vez y luego
+                verifica la condición.
+            </p>
+
+<pre><code>int numero;
+
+do {
+
+    scanf("%d", &numero);
+
+} while (numero <= 0);</code></pre>
+
+            <div class="result">
+                Se ejecuta mínimo una vez.
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="comparison-table">
+
+        <h3>Comparación de estructuras repetitivas</h3>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Estructura</th>
+                    <th>Evalúa</th>
+                    <th>Mínimo de ejecuciones</th>
+                    <th>Uso principal</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><strong>for</strong></td>
+                    <td>Antes</td>
+                    <td>0</td>
+                    <td>Número de repeticiones conocido</td>
+                </tr>
+
+                <tr>
+                    <td><strong>while</strong></td>
+                    <td>Antes</td>
+                    <td>0</td>
+                    <td>Repetición condicionada</td>
+                </tr>
+
+                <tr>
+                    <td><strong>do/while</strong></td>
+                    <td>Después</td>
+                    <td>1</td>
+                    <td>Menús y validaciones</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BREAK Y CONTINUE
+===================================================== -->
+
+<section id="control" class="section gray-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">08</span>
+
+        <div>
+            <span class="section-label">CONTROL DE FLUJO</span>
+
+            <h2>Sentencias break y continue</h2>
+        </div>
+
+    </div>
+
+
+    <div class="control-grid">
+
+
+        <article class="control-card break-card">
+
+            <div class="control-icon">⛔</div>
+
+            <h3>break</h3>
+
+            <p>
+                Interrumpe completamente el ciclo o estructura
+                en la que se encuentra.
+            </p>
+
+<pre><code>for (int i = 1; i <= 10; i++) {
+
+    if (i == 6) {
+        break;
+    }
+
+    printf("%d ", i);
+}</code></pre>
+
+            <strong>
+                Resultado: 1 2 3 4 5
+            </strong>
+
+        </article>
+
+
+        <article class="control-card continue-card">
+
+            <div class="control-icon">⏭️</div>
+
+            <h3>continue</h3>
+
+            <p>
+                Omite la iteración actual y continúa con
+                la siguiente repetición.
+            </p>
+
+<pre><code>for (int i = 1; i <= 10; i++) {
+
+    if (i == 5) {
+        continue;
+    }
+
+    printf("%d ", i);
+}</code></pre>
+
+            <strong>
+                Resultado: 1 2 3 4 6 7 8 9 10
+            </strong>
+
+        </article>
+
+    </div>
+
+
+    <div class="important-box">
+
+        <h3>💡 Recuerda</h3>
+
+        <p>
+            <strong>break</strong> termina el ciclo.
+            <strong>continue</strong> solamente salta la iteración actual.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ERRORES
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <span class="section-number">09</span>
+
+        <div>
+            <span class="section-label">DEPURACIÓN</span>
+
+            <h2>Errores en un programa</h2>
+        </div>
+
+    </div>
+
+
+    <div class="error-grid">
+
+        <article class="error-card">
+
+            <span class="error-number">01</span>
+
+            <h3>Error de sintaxis</h3>
+
+            <p>
+                Se produce cuando no se respetan las reglas
+                del lenguaje.
+            </p>
+
+<pre><code>int edad = 18</code></pre>
+
+            <span class="error-fix">
+                Falta ;
+            </span>
+
+        </article>
+
+
+        <article class="error-card">
+
+            <span class="error-number">02</span>
+
+            <h3>Error lógico</h3>
+
+            <p>
+                El programa funciona, pero produce un resultado
+                incorrecto.
+            </p>
+
+<pre><code>promedio =
+nota1 + nota2 / 2;</code></pre>
+
+            <span class="error-fix">
+                Usar paréntesis
+            </span>
+
+        </article>
+
+
+        <article class="error-card">
+
+            <span class="error-number">03</span>
+
+            <h3>Error de ejecución</h3>
+
+            <p>
+                Se produce mientras el programa está funcionando.
+            </p>
+
+<pre><code>Operación no válida
+durante la ejecución</code></pre>
+
+            <span class="error-fix">
+                Revisar los datos
+            </span>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROGRAMA INTEGRADOR
+===================================================== -->
+
+<section class="section dark-section">
+
+    <div class="section-heading light">
+
+        <span class="section-number">10</span>
+
+        <div>
+            <span class="section-label">APLICACIÓN</span>
+
+            <h2>Programa integrador</h2>
+        </div>
+
+    </div>
+
+
+    <p class="section-intro light-text">
+        El siguiente programa combina variables, constantes,
+        operadores, if-else, switch, for, do-while, break y continue.
+    </p>
+
+
+    <div class="large-code-window">
+
+        <div class="code-header">
+
+            <span class="terminal-dots">
+                ● ● ●
+            </span>
+
+            <span>sistema_notas.c</span>
+
+        </div>
+
+<pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+
+    const int APROBACION = 51;
+
+    int opcion;
+    int nota;
+
+    do {
+
+        printf("\n===== SISTEMA DE NOTAS =====\n");
+
+        printf("1. Registrar nota\n");
+        printf("2. Mostrar números\n");
+        printf("3. Salir\n");
+
+        printf("Seleccione una opción: ");
+        scanf("%d", &amp;opcion);
+
+        switch (opcion) {
+
+            case 1:
+
+                printf("Ingrese la nota: ");
+                scanf("%d", &amp;nota);
+
+                if (nota &gt;= APROBACION) {
+
+                    printf("APROBADO\n");
+
+                } else {
+
+                    printf("REPROBADO\n");
+                }
+
+                break;
+
+
+            case 2:
+
+                for (int i = 1; i &lt;= 5; i++) {
+
+                    if (i == 3) {
+                        continue;
+                    }
+
+                    printf("%d\n", i);
+                }
+
+                break;
+
+
+            case 3:
+
+                printf("Finalizando programa...\n");
+
+                break;
+
+
+            default:
+
+                printf("Opción no válida.\n");
+        }
+
+    } while (opcion != 3);
+
+
+    return 0;
+}</code></pre>
+
+    </div>
+
+
+    <div class="analysis-box">
+
+        <h3>🔎 Análisis del programa</h3>
+
+        <div class="analysis-grid">
+
+            <span><b>const</b> → constante</span>
+            <span><b>int</b> → tipo de dato</span>
+            <span><b>if-else</b> → decisión</span>
+            <span><b>switch</b> → selección múltiple</span>
+            <span><b>for</b> → repetición</span>
+            <span><b>do-while</b> → repetición</span>
+            <span><b>break</b> → interrupción</span>
+            <span><b>continue</b> → salto de iteración</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ACTIVIDAD PRÁCTICA
+===================================================== -->
+
+<section id="actividad" class="section">
+
+    <div class="section-heading">
+
+        <span class="section-number">11</span>
+
+        <div>
+            <span class="section-label">APRENDIZAJE PRÁCTICO</span>
+
+            <h2>Actividad: Sistema de calificaciones</h2>
+        </div>
+
+    </div>
+
+
+    <div class="project-card">
+
+        <div class="project-header">
+
+            <span class="project-icon">🚀</span>
+
+            <div>
+
+                <span class="project-label">
+                    PROYECTO DE PROGRAMACIÓN
+                </span>
+
+                <h3>Sistema básico de calificaciones</h3>
+
+            </div>
+
+        </div>
+
+
+        <p>
+            Desarrollar un programa que permita registrar las notas
+            de un estudiante y determinar automáticamente su situación
+            académica.
+        </p>
+
+
+        <h4>El programa debe permitir:</h4>
+
+        <div class="requirements">
+
+            <div>
+                <span>01</span>
+                Ingresar el nombre del estudiante.
+            </div>
+
+            <div>
+                <span>02</span>
+                Registrar tres notas.
+            </div>
+
+            <div>
+                <span>03</span>
+                Calcular el promedio.
+            </div>
+
+            <div>
+                <span>04</span>
+                Determinar si está aprobado o reprobado.
+            </div>
+
+            <div>
+                <span>05</span>
+                Utilizar un menú con switch.
+            </div>
+
+            <div>
+                <span>06</span>
+                Utilizar if-else.
+            </div>
+
+            <div>
+                <span>07</span>
+                Utilizar for.
+            </div>
+
+            <div>
+                <span>08</span>
+                Utilizar while o do-while.
+            </div>
+
+            <div>
+                <span>09</span>
+                Utilizar una constante.
+            </div>
+
+            <div>
+                <span>10</span>
+                Utilizar break y continue.
+            </div>
+
+        </div>
+
+
+        <div class="passing-rule">
+
+            <span>REGLA DE APROBACIÓN</span>
+
+            <strong>Promedio ≥ 51 → APROBADO</strong>
+
+            <strong>Promedio &lt; 51 → REPROBADO</strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ACTIVIDAD DE ANÁLISIS
+===================================================== -->
+
+<section class="section gray-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">12</span>
+
+        <div>
+            <span class="section-label">REFLEXIÓN</span>
+
+            <h2>Preguntas de análisis</h2>
+        </div>
+
+    </div>
+
+
+    <div class="questions">
+
+        <div class="question">
+            <span>01</span>
+            ¿Qué función cumple el código fuente?
+        </div>
+
+        <div class="question">
+            <span>02</span>
+            ¿Cuál es la diferencia entre compilación y ejecución?
+        </div>
+
+        <div class="question">
+            <span>03</span>
+            ¿Qué importancia tienen los tipos de datos?
+        </div>
+
+        <div class="question">
+            <span>04</span>
+            ¿Cuál es la diferencia entre variable y constante?
+        </div>
+
+        <div class="question">
+            <span>05</span>
+            ¿Para qué sirven los operadores?
+        </div>
+
+        <div class="question">
+            <span>06</span>
+            ¿Cuándo utilizarías una estructura if?
+        </div>
+
+        <div class="question">
+            <span>07</span>
+            ¿Qué diferencia existe entre if y if-else?
+        </div>
+
+        <div class="question">
+            <span>08</span>
+            ¿Cuándo es conveniente utilizar switch?
+        </div>
+
+        <div class="question">
+            <span>09</span>
+            ¿Cuál es la diferencia entre for y while?
+        </div>
+
+        <div class="question">
+            <span>10</span>
+            ¿Por qué do-while se ejecuta al menos una vez?
+        </div>
+
+        <div class="question">
+            <span>11</span>
+            ¿Qué función cumple break?
+        </div>
+
+        <div class="question">
+            <span>12</span>
+            ¿Qué función cumple continue?
+        </div>
+
+        <div class="question">
+            <span>13</span>
+            ¿Qué es un error de sintaxis?
+        </div>
+
+        <div class="question">
+            <span>14</span>
+            ¿Qué es un error lógico?
+        </div>
+
+        <div class="question">
+            <span>15</span>
+            ¿Por qué es importante realizar pruebas?
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EVALUACIÓN
+===================================================== -->
+
+<section id="evaluacion" class="section">
+
+    <div class="section-heading">
+
+        <span class="section-number">13</span>
+
+        <div>
+            <span class="section-label">EVALUACIÓN</span>
+
+            <h2>Comprueba tus conocimientos</h2>
+        </div>
+
+    </div>
+
+
+    <div class="evaluation-intro">
+
+        <p>
+            Selecciona la respuesta correcta para cada pregunta.
+        </p>
+
+        <span>
+            15 preguntas · 1 punto cada una
+        </span>
+
+    </div>
+
+
+    <div class="evaluation-grid">
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">01</span>
+
+            <h3>
+                ¿Qué es el código fuente?
+            </h3>
+
+            <label>
+                <input type="radio" name="q1">
+                A. Un archivo de imágenes
+            </label>
+
+            <label>
+                <input type="radio" name="q1">
+                B. Instrucciones escritas por el programador
+            </label>
+
+            <label>
+                <input type="radio" name="q1">
+                C. Un dispositivo
+            </label>
+
+            <label>
+                <input type="radio" name="q1">
+                D. Una memoria
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">02</span>
+
+            <h3>
+                ¿Qué proceso traduce el código fuente?
+            </h3>
+
+            <label>
+                <input type="radio" name="q2">
+                A. Ejecución
+            </label>
+
+            <label>
+                <input type="radio" name="q2">
+                B. Compilación
+            </label>
+
+            <label>
+                <input type="radio" name="q2">
+                C. Diseño
+            </label>
+
+            <label>
+                <input type="radio" name="q2">
+                D. Almacenamiento
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">03</span>
+
+            <h3>
+                ¿Cuál representa una constante?
+            </h3>
+
+            <label>
+                <input type="radio" name="q3">
+                A. int edad
+            </label>
+
+            <label>
+                <input type="radio" name="q3">
+                B. const int DIAS = 7
+            </label>
+
+            <label>
+                <input type="radio" name="q3">
+                C. float nota
+            </label>
+
+            <label>
+                <input type="radio" name="q3">
+                D. char letra
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">04</span>
+
+            <h3>
+                ¿Qué operador representa igualdad?
+            </h3>
+
+            <label>
+                <input type="radio" name="q4">
+                A. =
+            </label>
+
+            <label>
+                <input type="radio" name="q4">
+                B. ==
+            </label>
+
+            <label>
+                <input type="radio" name="q4">
+                C. !=
+            </label>
+
+            <label>
+                <input type="radio" name="q4">
+                D. &gt;=
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">05</span>
+
+            <h3>
+                ¿Qué estructura permite tomar una decisión?
+            </h3>
+
+            <label>
+                <input type="radio" name="q5">
+                A. if
+            </label>
+
+            <label>
+                <input type="radio" name="q5">
+                B. for
+            </label>
+
+            <label>
+                <input type="radio" name="q5">
+                C. while
+            </label>
+
+            <label>
+                <input type="radio" name="q5">
+                D. continue
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">06</span>
+
+            <h3>
+                ¿Qué estructura permite múltiples opciones?
+            </h3>
+
+            <label>
+                <input type="radio" name="q6">
+                A. if
+            </label>
+
+            <label>
+                <input type="radio" name="q6">
+                B. switch
+            </label>
+
+            <label>
+                <input type="radio" name="q6">
+                C. while
+            </label>
+
+            <label>
+                <input type="radio" name="q6">
+                D. break
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">07</span>
+
+            <h3>
+                ¿Qué ciclo se utiliza cuando conocemos las repeticiones?
+            </h3>
+
+            <label>
+                <input type="radio" name="q7">
+                A. for
+            </label>
+
+            <label>
+                <input type="radio" name="q7">
+                B. switch
+            </label>
+
+            <label>
+                <input type="radio" name="q7">
+                C. if
+            </label>
+
+            <label>
+                <input type="radio" name="q7">
+                D. break
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">08</span>
+
+            <h3>
+                ¿Cuál se ejecuta al menos una vez?
+            </h3>
+
+            <label>
+                <input type="radio" name="q8">
+                A. if
+            </label>
+
+            <label>
+                <input type="radio" name="q8">
+                B. for
+            </label>
+
+            <label>
+                <input type="radio" name="q8">
+                C. do-while
+            </label>
+
+            <label>
+                <input type="radio" name="q8">
+                D. switch
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">09</span>
+
+            <h3>
+                ¿Qué sentencia termina un ciclo?
+            </h3>
+
+            <label>
+                <input type="radio" name="q9">
+                A. continue
+            </label>
+
+            <label>
+                <input type="radio" name="q9">
+                B. break
+            </label>
+
+            <label>
+                <input type="radio" name="q9">
+                C. if
+            </label>
+
+            <label>
+                <input type="radio" name="q9">
+                D. case
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">10</span>
+
+            <h3>
+                ¿Qué sentencia salta una iteración?
+            </h3>
+
+            <label>
+                <input type="radio" name="q10">
+                A. break
+            </label>
+
+            <label>
+                <input type="radio" name="q10">
+                B. continue
+            </label>
+
+            <label>
+                <input type="radio" name="q10">
+                C. switch
+            </label>
+
+            <label>
+                <input type="radio" name="q10">
+                D. return
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">11</span>
+
+            <h3>
+                ¿Qué tipo representa números enteros?
+            </h3>
+
+            <label>
+                <input type="radio" name="q11">
+                A. char
+            </label>
+
+            <label>
+                <input type="radio" name="q11">
+                B. float
+            </label>
+
+            <label>
+                <input type="radio" name="q11">
+                C. int
+            </label>
+
+            <label>
+                <input type="radio" name="q11">
+                D. void
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">12</span>
+
+            <h3>
+                ¿Qué operador obtiene el resto?
+            </h3>
+
+            <label>
+                <input type="radio" name="q12">
+                A. /
+            </label>
+
+            <label>
+                <input type="radio" name="q12">
+                B. %
+            </label>
+
+            <label>
+                <input type="radio" name="q12">
+                C. *
+            </label>
+
+            <label>
+                <input type="radio" name="q12">
+                D. +
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">13</span>
+
+            <h3>
+                ¿Qué operador representa AND?
+            </h3>
+
+            <label>
+                <input type="radio" name="q13">
+                A. ||
+            </label>
+
+            <label>
+                <input type="radio" name="q13">
+                B. !
+            </label>
+
+            <label>
+                <input type="radio" name="q13">
+                C. &amp;&amp;
+            </label>
+
+            <label>
+                <input type="radio" name="q13">
+                D. ==
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">14</span>
+
+            <h3>
+                ¿Qué error produce resultados incorrectos?
+            </h3>
+
+            <label>
+                <input type="radio" name="q14">
+                A. Error lógico
+            </label>
+
+            <label>
+                <input type="radio" name="q14">
+                B. Error tipográfico
+            </label>
+
+            <label>
+                <input type="radio" name="q14">
+                C. Error gráfico
+            </label>
+
+            <label>
+                <input type="radio" name="q14">
+                D. Error visual
+            </label>
+
+        </article>
+
+
+        <article class="quiz-card">
+
+            <span class="quiz-number">15</span>
+
+            <h3>
+                ¿Qué elemento traduce el código fuente?
+            </h3>
+
+            <label>
+                <input type="radio" name="q15">
+                A. Monitor
+            </label>
+
+            <label>
+                <input type="radio" name="q15">
+                B. Compilador
+            </label>
+
+            <label>
+                <input type="radio" name="q15">
+                C. Teclado
+            </label>
+
+            <label>
+                <input type="radio" name="q15">
+                D. Mouse
+            </label>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RESUMEN
+===================================================== -->
+
+<section class="summary-section">
+
+    <div class="summary-content">
+
+        <span class="section-label">
+            RESUMEN FINAL
+        </span>
+
+        <h2>
+            De un problema a un programa ejecutable
+        </h2>
+
+        <div class="summary-flow">
+
+            <span>Problema</span>
+            <b>→</b>
+
+            <span>Análisis</span>
+            <b>→</b>
+
+            <span>Algoritmo</span>
+            <b>→</b>
+
+            <span>Código</span>
+            <b>→</b>
+
+            <span>Compilación</span>
+            <b>→</b>
+
+            <span>Prueba</span>
+            <b>→</b>
+
+            <span>Ejecutar</span>
+
+        </div>
+
+        <p>
+            La programación combina pensamiento lógico, estructuras
+            de control y conocimientos técnicos para crear soluciones
+            informáticas eficientes.
+        </p>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     PIE DE PÁGINA
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+
+            <span class="logo-symbol">&lt;/&gt;</span>
+
+            <div>
+                <strong>Sistemas Informáticos</strong>
+                <small>5.º de Secundaria</small>
+            </div>
+
+        </div>
+
+
+        <div class="footer-info">
+
+            <p>
+                Codificación y Ejecución de un Programa
+            </p>
+
+            <p>
+                Material educativo · Programación
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 · Material educativo para 5.º de Secundaria
+        </span>
+
+        <span>
+            Aprender · Programar · Crear
+        </span>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
